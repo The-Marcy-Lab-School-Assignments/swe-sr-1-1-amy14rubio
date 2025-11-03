@@ -30,12 +30,27 @@ Below, we've provided an outline for your response but feel free to modify it as
 
 ### Response
 
-[Replace with your explanation of the concept with an analogy]
+According to MDN, a **function** is a set of statements that performs a task or calculates a value. It can take some input and return an output, and it can later be called in the same scope where it was defined.
 
-Check out this example:
+You can think of a function as a recipe in a cookbook. A recipe contains a list of instructions you can refer to whenever you want to make a specific dish. A recipe has **inputs**, which are the ingredients required to make the meal, and an **output** which is the finished dish. Each time you want to make that dish, you can refer to your cookbook instead of recalling all the instructions and measurements from memory. Similarly, a function allows you to **reuse** code without rewriting it every time and essentially perform the same task with different inputs.
+
+An example of how to write an arrow function in JavaScript would be the following:
 
 ```js
-// Add your example here
+const add = (x, y) => {
+    return x + y;
+}
+
+add(2, 2);
 ```
 
-[Replace with your explanation of the example and explanation of the syntax]
+In this example, we can see that the **arrow function** is saved into a variable named ```add```. The function then takes two inputs ```(x, y)```, which are called **parameters**. The following code block contains a ```return``` statement that outputs the result of ```x + y```. In this case, the function ```add``` is called *(or invoked)* with the **arguments** ```(2, 2)```, and it returns an output of ```4```.
+
+A more simplified version of this same function would be the following:
+```js
+const add = (x, y) => x + y;
+
+add(2, 2);
+```
+
+Note that in this instance, the function has an implicit ```return```.
